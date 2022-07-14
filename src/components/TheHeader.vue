@@ -12,7 +12,7 @@
         </div>
 
         <Transition name="menu">
-            <div v-click-outside="onClickOutside" v-if="isMenuClicked" class="menu">
+            <div  v-if="isMenuClicked" class="menu">
                 <ul>
                     <li>
                         <router-link to="/about">About us</router-link>
@@ -35,9 +35,7 @@ export default {
         }
     },
     methods: {
-        onClickOutside() {
-            console.log("clicked outside");
-        }
+        
     }
 
 }

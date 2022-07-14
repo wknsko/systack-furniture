@@ -81,7 +81,7 @@ export default {
         getImg(pic) {
             return require('../assets/00' + pic + '.jpg')
         },
-       
+
 
 
     },
@@ -96,11 +96,10 @@ export default {
         }, 7000)
     },
     components: {
-        
+
     }
 }
 </script>
 
 <style>
-
 </style>

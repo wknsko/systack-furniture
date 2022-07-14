@@ -27,9 +27,7 @@ export default {
     getImg(pic) {
       return require('./assets/00' + pic + '.jpg')
     },
-    onClickOutside() {
-      console.log("clicked outside");
-    },
+   
     
   },
   created() {

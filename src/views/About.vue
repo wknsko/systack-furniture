@@ -34,6 +34,7 @@ export default {
 <style lang="scss">
 .container {
     max-width: 700px;
+    
     margin: 100px auto;
 }
 
