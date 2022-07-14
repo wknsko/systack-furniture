@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+
+ <the-header></the-header>
+
+  <router-view></router-view>
+
+  <the-footer></the-footer>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AOS from 'aos'
+import TheHeader from './components/TheHeader.vue'
+import TheFooter from './components/TheFooter.vue'
+
 
 export default {
   name: 'App',
+  data() {
+    return {
+      
+      
+    }
+  },
+  methods: {
+    getImg(pic) {
+      return require('./assets/00' + pic + '.jpg')
+    },
+    onClickOutside() {
+      console.log("clicked outside");
+    },
+    
+  },
+  created() {
+    AOS.init()
+  },
   components: {
-    HelloWorld
+    TheHeader, TheFooter
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+
 </style>
